@@ -8,11 +8,10 @@ void free_list(list_t *head);
 /**
  * add_alias_end - Adds a node to the end of a alias_t linked list.
  * @head: A pointer to the head of the list_t list.
- * @name: The name of the new alias to be added.
- * @value: The value of the new alias to be added.
+ * @name: The name of the new alias.
+ * @value: The value of the new alias.
  *
- * Return: If an error occurs - NULL.
- *         Otherwise - a pointer to the new node.
+ * Return: If an error occurs - NULL, otherwise a pointer.
  */
 alias_t *add_alias_end(alias_t **head, char *name, char *value)
 {
@@ -48,10 +47,9 @@ alias_t *add_alias_end(alias_t **head, char *name, char *value)
 /**
  * add_node_end - Adds a node to the end of a list_t linked list.
  * @head: A pointer to the head of the list_t list.
- * @dir: The directory path for the new node to contain.
+ * @dir: The directory path for the new node.
  *
- * Return: If an error occurs - NULL.
- *         Otherwise - a pointer to the new node.
+ * Return: If an error occurs - NULL, otherwise a pointer.
  */
 list_t *add_node_end(list_t **head, char *dir)
 {
@@ -79,7 +77,7 @@ list_t *add_node_end(list_t **head, char *dir)
 
 /**
  * free_alias_list - Frees a alias_t linked list.
- * @head: THe head of the alias_t list.
+ * @head: The head of the alias_t list.
  */
 void free_alias_list(alias_t *head)
 {

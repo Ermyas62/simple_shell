@@ -7,8 +7,8 @@ list_t *get_path_dir(char *path);
  * get_location - Locates a command in the PATH.
  * @command: The command to locate.
  *
- * Return: If an error occurs or the command cannot be located - NULL.
- *         Otherwise - the full pathname of the command.
+ * Return: If an error occurs - NULL.
+ *         Otherwise - the full pathname.
  */
 char *get_location(char *command)
 {
@@ -53,8 +53,7 @@ char *get_location(char *command)
  *		   colons (:) with current working directory.
  * @path: The colon-separated list of directories.
  *
- * Return: A copy of path with any leading/sandwiched/trailing colons replaced
- *	   with the current working directory.
+ * Return: A copy of path with any colons replaced with the current working directory.
  */
 char *fill_path_dir(char *path)
 {

@@ -6,14 +6,13 @@ int shellby_unsetenv(char **args, char __attribute__((__unused__)) **front);
 
 /**
  * shellby_env - Prints the current environment.
- * @args: An array of arguments passed to the shell.
- * @front: A double pointer to the beginning of args.
+ * @args: An array of arguments.
+ * @front: A double pointer to the beginning of arguments.
  *
- * Return: If an error occurs - -1.
- *	   Otherwise - 0.
+ * Return: If an error occurs - -1 or 0 otherwise.
  *
  * Description: Prints one variable per line in the
- *              format 'variable'='value'.
+ *              format 'variable' = 'value'.
  */
 int shellby_env(char **args, char __attribute__((__unused__)) **front)
 {
@@ -35,13 +34,12 @@ int shellby_env(char **args, char __attribute__((__unused__)) **front)
 
 /**
  * shellby_setenv - Changes or adds an environmental variable to the PATH.
- * @args: An array of arguments passed to the shell.
- * @front: A double pointer to the beginning of args.
+ * @args: An array of arguments.
+ * @front: A double pointer to the beginning of arguments.
  * Description: args[1] is the name of the new or existing PATH variable.
  *              args[2] is the value to set the new or changed variable to.
  *
- * Return: If an error occurs - -1.
- *         Otherwise - 0.
+ * Return: If an error occurs - -1 or 0 otherwise.
  */
 int shellby_setenv(char **args, char __attribute__((__unused__)) **front)
 {
@@ -89,12 +87,11 @@ int shellby_setenv(char **args, char __attribute__((__unused__)) **front)
 
 /**
  * shellby_unsetenv - Deletes an environmental variable from the PATH.
- * @args: An array of arguments passed to the shell.
- * @front: A double pointer to the beginning of args.
+ * @args: An array of arguments.
+ * @front: A double pointer to the beginning of arguments.
  * Description: args[1] is the PATH variable to remove.
  *
- * Return: If an error occurs - -1.
- *         Otherwise - 0.
+ * Return: If an error occurs - -1 or 0 otherwise.
  */
 int shellby_unsetenv(char **args, char __attribute__((__unused__)) **front)
 {

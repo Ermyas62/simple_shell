@@ -19,10 +19,10 @@ void sig_handler(int sig)
 /**
  * execute - Executes a command in a child process.
  * @args: An array of arguments.
- * @front: A double pointer to the beginning of args.
+ * @front: A double pointer to the beginning of arguments.
  *
  * Return: If an error occurs - a corresponding error code.
- *         O/w - The exit value of the last executed command.
+ *         Otherwise - The exit value of the last executed command.
  */
 int execute(char **args, char **front)
 {

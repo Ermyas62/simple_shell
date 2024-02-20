@@ -11,8 +11,7 @@ int check_args(char **args);
  * @line: A buffer to store the command.
  * @exe_ret: The return value of the last executed command.
  *
- * Return: If an error occurs - NULL.
- *         Otherwise - a pointer to the stored command.
+ * Return: If an error occurs - NULL, Otherwise - a pointer.
  */
 char *get_args(char *line, int *exe_ret)
 {
@@ -44,8 +43,8 @@ char *get_args(char *line, int *exe_ret)
 /**
  * call_args - Partitions operators from commands and calls them.
  * @args: An array of arguments.
- * @front: A double pointer to the beginning of args.
- * @exe_ret: The return value of the parent process' last executed command.
+ * @front: A double pointer to the beginning of arguments.
+ * @exe_ret: The return value of the parent process last executed command.
  *
  * Return: The return value of the last executed command.
  */
@@ -102,8 +101,8 @@ int call_args(char **args, char **front, int *exe_ret)
 /**
  * run_args - Calls the execution of a command.
  * @args: An array of arguments.
- * @front: A double pointer to the beginning of args.
- * @exe_ret: The return value of the parent process' last executed command.
+ * @front: A double pointer to the beginning of arguments.
+ * @exe_ret: The return value of the parent process last executed command.
  *
  * Return: The return value of the last executed command.
  */
@@ -140,7 +139,7 @@ int run_args(char **args, char **front, int *exe_ret)
  *
  * Return: If an end-of-file is read - END_OF_FILE (-2).
  *         If the input cannot be tokenized - -1.
- *         O/w - The exit value of the last executed command.
+ *         Otherwise - The exit value of the last executed command.
  */
 int handle_args(int *exe_ret)
 {

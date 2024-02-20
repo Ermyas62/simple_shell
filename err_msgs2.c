@@ -5,7 +5,7 @@ char *error_127(char **args);
 
 /**
  * error_126 - Creates an error message for permission denied failures.
- * @args: An array of arguments passed to the command.
+ * @args: An array of arguments.
  *
  * Return: The error string.
  */
@@ -39,7 +39,7 @@ char *error_126(char **args)
 
 /**
  * error_127 - Creates an error message for command not found failures.
- * @args: An array of arguments passed to the command.
+ * @args: An array of arguments.
  *
  * Return: The error string.
  */
